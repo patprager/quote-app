@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color-header: #000016;
+  --neon-button: #05e2ff;
+}
+html {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-size: 55px;
+  color: aliceblue;
+  text-shadow: 0 0 20px #05e2ff, 0 0 75px #05e2ff,
+    -40px -35px 0px rgba(150, 239, 255, 0);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  background-color: rgb(213, 245, 255);
+  color: #000016;
+}
+.head-container {
+  padding: 5rem;
+  background-color: var(--background-color-header);
+  _display: flex;
+  _flex-wrap: wrap;
+}
+
+.quote-button:hover {
+  color: #000016;
+  background-color: #05e2ff;
+  font-weight: bold;
+}
+
+.quote-button {
+  _justify-content: flex-end;
+  margin-right: 10rem;
+  margin-top: 2rem;
+  font-size: 20px;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 0.25rem solid var(--neon-button);
+  border-radius: 0.5rem;
+  background-color: var(--background-color-header);
+  color: var(--neon-button);
+  box-shadow: 0px 0px 42px -3px rgba(110, 241, 250, 0.75);
+  -webkit-box-shadow: 0px 0px 42px -3px rgba(110, 241, 250, 0.75);
+  -moz-box-shadow: 0px 0px 42px -3px rgba(110, 241, 250, 0.75);
+}
+
+.quotation {
+  font-family: "Bebas Neue", cursive;
+  color: #000016;
+  font-size: 3rem;
+  letter-spacing: 0.05rem;
+}
+
+.author-quote {
+  font-size: 1.2rem;
+  margin-left: 5rem;
+}
+.author-quote::before {
+  content: "—  ";
+}
